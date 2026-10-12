@@ -1,0 +1,79 @@
+/* ===================================================================
+   FMAP: Our Approach (Structured)
+   =================================================================== */
+.fmap {
+  --fmap-bg: var(--cream);
+  --fmap-navy: var(--navy);
+  --fmap-green: var(--green);
+  --fmap-on-green: var(--white);
+  --fmap-green-pale: color-mix(in srgb, var(--green) 16%, #fff);
+  --fmap-line: color-mix(in srgb, var(--green) 85%, #fff);
+  --fmap-muted: color-mix(in srgb, var(--text) 80%, transparent);
+  --fmap-ease: cubic-bezier(.2,.8,.2,1);
+}
+
+.fmap { background: linear-gradient(180deg, #fff 0%, var(--fmap-bg) 100%); overflow-x: clip; }
+.fmap *, .fmap *::before, .fmap *::after { box-sizing: border-box; }
+
+/* ONE coordinate box: every absolute child below is positioned in % of this box, so nothing drifts at any width */
+.fmap__stage { position: relative; width: 100%; max-width: 1920px; margin: 0 auto; aspect-ratio: 1167 / 620; }
+
+.fmap__bg { position: absolute; left: 0; right: 0; bottom: 0; width: 100%; height: 46%; object-fit: cover; object-position: center bottom; opacity: .4; pointer-events: none; z-index: 0;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 45%); mask-image: linear-gradient(to bottom, transparent 0, #000 45%); }
+
+.fmap-wave { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none; overflow: visible; }
+.fmap-wave__path  { stroke: var(--fmap-line); stroke-width: 1.3; }
+.fmap-wave__arrow { stroke: var(--fmap-line); stroke-width: 1.3; stroke-linecap: round; stroke-linejoin: round; }
+
+/* ---------- HEAD ---------- */
+.fmap__head { position: absolute; left: 4%; top: 2.6%; width: 46%; z-index: 4; text-align: left; }
+.fmap-eyebrow { display: inline-flex; align-items: center; gap: clamp(14px, 2.4vw, 40px); font-family: var(--font-body); font-size: var(--fs-xs); font-weight: 500; letter-spacing: .3em; text-transform: uppercase; color: var(--fmap-muted); margin-bottom: clamp(10px, 1.5vw, 26px); }
+.fmap-eyebrow__line { flex: 0 0 auto; width: clamp(30px, 3.6vw, 62px); height: 1.5px; background: var(--fmap-green); }
+.fmap .fmap__title { font-size: var(--fs-2xl); line-height: 1.04; margin: 0 0 clamp(10px, 1.3vw, 22px); overflow-wrap: break-word; }
+.fmap .fmap__accent { color: var(--fmap-green); }
+.fmap .fmap__text { max-width: 31em; font-size: var(--fs-md); line-height: 1.5; margin: 0; overflow-wrap: break-word; }
+
+/* ---------- STEPS: <li> disappears (display: contents) so its 3 children are positioned in the stage ---------- */
+.fmap-steps { list-style: none; margin: 0; padding: 0; }
+.fmap-step { display: contents; }
+
+.fmap-leaf { position: absolute; left: var(--lx); top: var(--ly); width: var(--lw); height: var(--lh); margin: 0; z-index: 2; filter: drop-shadow(0 16px 20px rgba(0,0,0,.14)); }
+.fmap-leaf__clip { width: 100%; height: 100%; overflow: hidden; -webkit-clip-path: url(#fmap-leaf-clip); clip-path: url(#fmap-leaf-clip); }
+.fmap-leaf__clip img { display: block; width: 100%; height: 100%; object-fit: cover; transform: scale(1.001); transition: transform 1.2s var(--fmap-ease); }
+
+.fmap-dot { position: absolute; left: var(--dx); top: var(--dy); width: clamp(7px, .78vw, 13px); aspect-ratio: 1; transform: translate(-50%, -50%); border-radius: 50%; background: var(--fmap-green); box-shadow: 0 0 0 2px #fff; z-index: 3; }
+
+.fmap-step__txt { position: absolute; left: var(--tx); top: var(--ty); width: var(--tw); z-index: 3; text-align: left; min-width: 0; }
+.fmap .fmap-step__no { display: block; font-size: clamp(36px, 5.3vw, 92px); line-height: .9; margin: 0 0 clamp(2px, .3vw, 6px); color: var(--fmap-green-pale); transition: color .5s ease; }
+.fmap .fmap-step__title { font-size: var(--fs-xl); line-height: 1.15; margin: 0 0 clamp(6px, .8vw, 14px); overflow-wrap: break-word; }
+.fmap .fmap__hl { color: var(--fmap-green); }
+.fmap .fmap-step__desc { font-size: var(--fs-sm); }
+
+.fmap-cap { position: absolute; font-family: var(--font-body); font-size: clamp(8px, .75vw, 12px); font-weight: 500; letter-spacing: .25em; text-transform: uppercase; color: var(--fmap-muted); line-height: 1.6; z-index: 4; margin: 0; }
+.fmap-cap--top { top: 3.5%; right: 7.7%; border-left: 1px solid var(--fmap-muted); padding-left: clamp(10px, 1.2vw, 16px); }
+.fmap-cap--side { top: 39%; right: 4%; }
+
+/* bottom row */
+.fmap-tag { position: absolute; left: 3.5%; bottom: 6%; display: inline-flex; align-items: center; gap: clamp(10px, 1.2vw, 20px); font-family: var(--font-body); font-size: clamp(8px, .75vw, 12px); font-weight: 600; letter-spacing: .25em; text-transform: uppercase; color: var(--fmap-muted); margin: 0; z-index: 4; }
+.fmap-tag__line { flex: 0 0 auto; width: clamp(20px, 2.5vw, 42px); height: 1.5px; background: var(--fmap-green); }
+
+.fmap-more { position: absolute; right: 4%; bottom: 6%; display: inline-flex; align-items: center; gap: clamp(8px, 1vw, 16px); font-family: var(--font-body); font-size: var(--fs-sm); font-weight: 700; letter-spacing: .15em; text-transform: uppercase; color: var(--fmap-navy); text-decoration: none; border-bottom: 2px solid var(--fmap-green); padding-bottom: 4px; transition: color .3s ease; z-index: 4; }
+.fmap-more:hover { color: var(--fmap-green); }
+.fmap-more__arrow { font-size: 1.2em; line-height: 1; transition: transform .3s ease; }
+.fmap-more:hover .fmap-more__arrow { transform: translateX(4px); }
+
+/* responsive adjustments */
+@media (max-width: 900px) {
+  .fmap__stage { aspect-ratio: auto; min-height: 1200px; padding: 40px 20px 80px; display: flex; flex-direction: column; gap: 40px; }
+  .fmap-wave, .fmap-cap, .fmap__bg { display: none; }
+  .fmap__head { position: static; width: 100%; margin-bottom: 20px; }
+  .fmap .fmap__text { font-size: var(--fs-md); }
+  .fmap-steps { display: flex; flex-direction: column; gap: 40px; }
+  .fmap-step { display: flex; flex-direction: column; gap: 16px; position: relative; }
+  .fmap-leaf { position: static; width: 100%; height: auto; aspect-ratio: 4/3; }
+  .fmap-step__txt { position: static; width: 100%; margin-top: 10px; }
+  .fmap-dot { display: none; }
+  .fmap-tag { position: static; margin-top: 20px; }
+  .fmap-more { position: static; align-self: flex-start; }
+  .fmap .fmap-step__no { font-size: 60px; margin-bottom: 8px; }
+}

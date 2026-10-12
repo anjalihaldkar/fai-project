@@ -1,0 +1,86 @@
+		<!-- Crop Opportunities Section -->
+		<section class="fmco" id="crop-opportunities">
+
+			<!-- TOP: text + funnel illustration -->
+			<div class="fmco__top">
+		  
+			  <div class="fmco__content">
+				<span class="fmco-eyebrow"><i class="fmco-eyebrow__line"></i>Crop Opportunities</span>
+		  
+				<h2 class="fm-heading fmco__title">From Possibilities<br>to the Right<br><span class="fmco__accent">Crop Options.</span></h2>
+		  
+				<p class="fm-text fmco__text">We analyse market demand, climate suitability, soil conditions, and resource availability to identify the best crops for your land.</p>
+		  
+				<a href="#crop-options" class="fm-cta-btn fmco__btn">
+				  <span class="fmco__btn-label">Explore Crop Options</span>
+				  <span class="fmco__btn-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+				</a>
+			  </div>
+		  
+			  <!-- ONE image: the glass funnel -->
+			  <figure class="fmco__media">
+				<picture>
+				  <img src="images/funnel.png" alt="Funnel diagram: 20+ crop possibilities filtered by site viability and commercial viability into 3 final crop options" class="fmco__img" loading="eager" width="1554" height="850">
+				</picture>
+			  </figure>
+			</div>
+		  
+			<!-- BOTTOM: three crop cards -->
+			<ul class="fmco-cards">
+		  
+			  <li class="fmco-card fmco-card--fit">
+				<figure class="fmco-card__photo">
+				  <img src="images/crop-lettuce.jpg" alt="Fresh green lettuce" loading="lazy" width="400" height="300">
+				  <span class="fmco-card__no">01</span>
+				</figure>
+				<div class="fmco-card__body">
+				  <div class="fmco-card__head">
+					<h3 class="fmco-card__name">Lettuce</h3>
+					<span class="fmco-card__chip">Best Fit</span>
+				  </div>
+				  <ul class="fmco-feats">
+					<li class="fmco-feat"><span class="fmco-feat__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 22l8-8"/></svg></span><span class="fmco-feat__txt">High Demand</span></li>
+					<li class="fmco-feat"><span class="fmco-feat__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span><span class="fmco-feat__txt">Short Growth Cycle</span></li>
+					<li class="fmco-feat"><span class="fmco-feat__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg></span><span class="fmco-feat__txt">Low Water Requirement</span></li>
+				  </ul>
+				</div>
+			  </li>
+		  
+			  <li class="fmco-card fmco-card--potential">
+				<figure class="fmco-card__photo">
+				  <img src="images/crop-tomato.jpg" alt="Ripe red tomatoes on the vine" loading="lazy" width="400" height="300">
+				  <span class="fmco-card__no">02</span>
+				</figure>
+				<div class="fmco-card__body">
+				  <div class="fmco-card__head">
+					<h3 class="fmco-card__name">Tomato</h3>
+					<span class="fmco-card__chip">High Potential</span>
+				  </div>
+				  <ul class="fmco-feats">
+					<li class="fmco-feat"><span class="fmco-feat__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span><span class="fmco-feat__txt">Strong Market</span></li>
+					<li class="fmco-feat"><span class="fmco-feat__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 22l8-8"/></svg></span><span class="fmco-feat__txt">High Yield</span></li>
+					<li class="fmco-feat"><span class="fmco-feat__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg></span><span class="fmco-feat__txt">Suitable Climate</span></li>
+				  </ul>
+				</div>
+			  </li>
+		  
+			  <li class="fmco-card fmco-card--premium">
+				<figure class="fmco-card__photo">
+				  <img src="images/crop-strawberry.jpg" alt="Fresh red strawberries" loading="lazy" width="400" height="300">
+				  <span class="fmco-card__no">03</span>
+				</figure>
+				<div class="fmco-card__body">
+				  <div class="fmco-card__head">
+					<h3 class="fmco-card__name">Strawberry</h3>
+					<span class="fmco-card__chip">Premium Opportunity</span>
+				  </div>
+				  <ul class="fmco-feats">
+					<li class="fmco-feat"><span class="fmco-feat__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span><span class="fmco-feat__txt">Premium Market</span></li>
+					<li class="fmco-feat"><span class="fmco-feat__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 22l8-8"/></svg></span><span class="fmco-feat__txt">High Returns</span></li>
+					<li class="fmco-feat"><span class="fmco-feat__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg></span><span class="fmco-feat__txt">Controlled Environment</span></li>
+				  </ul>
+				</div>
+			  </li>
+		  
+			</ul>
+		</section>
