@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Resources &amp; Blog | Future Agri Infra</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="style.css?v=1.6">
+	<link rel="stylesheet" href="resstyle.css?v=2.0">
+</head>
+
+<body class="protected-page">
+	<div class="afm-scope" id="afmScope">
+
+		<div class="afm-scrim" id="afmScrim"></div>
+
+		<nav class="afm-navbar afm-navbar--solid" aria-label="Primary">
+			<a href="index.html" class="afm-brand">
+				<span class="afm-brand__mark">
+					<img src="images/logo.png" alt="botanix logo"
+						style="height: 54px; width: auto; object-fit: contain;">
+				</span>
+			</a>
+
+			<ul class="afm-menu" id="afmMenu">
+				<li class="afm-menu__mobile-header">
+					<a href="index.html">
+						<img src="images/logo.png" alt="logo" style="height: 40px; width: auto; object-fit: contain;">
+					</a>
+					<button type="button" class="afm-menu__close" id="afmClose" aria-label="Close menu">
+						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+							stroke-linecap="round" stroke-linejoin="round" width="24" height="24">
+							<line x1="18" y1="6" x2="6" y2="18"></line>
+							<line x1="6" y1="6" x2="18" y2="18"></line>
+						</svg>
+					</button>
+				</li>
+				<li class="afm-menu__item">
+					<a href="about.html" class="afm-menu__link">About Us</a>
+				</li>
+
+				<li class="afm-menu__item">
+					<a href="planfarm.html" class="afm-menu__link" aria-expanded="false">
+						Plan Your Farm
+						<svg class="afm-menu__caret" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+							stroke-width="3">
+							<path d="M6 9l6 6 6-6" />
+						</svg>
+					</a>
+					<ul class="afm-dropdown">
+						<li><a href="planfarm.html" class="afm-dropdown__link">Plan Your Farm</a></li>
+						<li><a href="turnkey.html" class="afm-dropdown__link">Turnkey Farm Development</a></li>
+						<li><a href="#" class="afm-dropdown__link">Subsidy Liaisoning</a></li>
+						<li><a href="#" class="afm-dropdown__link">Agronomy Support</a></li>
+						<li><a href="#" class="afm-dropdown__link">Sales &amp; Market Linkage</a></li>
+						<li><a href="#" class="afm-dropdown__link">Consultation</a></li>
+					</ul>
+				</li>
+
+				<li class="afm-menu__item">
+					<button type="button" class="afm-menu__link" aria-expanded="false">
+						Protected Farming Solutions
+						<svg class="afm-menu__caret" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+							stroke-width="3">
+							<path d="M6 9l6 6 6-6" />
+						</svg>
+					</button>
+
+					<div class="afm-mega">
+						<div class="afm-mega__grid">
+							<div class="afm-mega__col">
+								<p class="afm-mega__col-title">Protected Structures</p>
+								<a href="#" class="afm-mega__link">Fan &amp; Pad Polyhouse</a>
+								<a href="#" class="afm-mega__link">Naturally Ventilated Polyhouse (NVPH)</a>
+								<a href="#" class="afm-mega__link">Nethouse</a>
+								<a href="#" class="afm-mega__link">Polynet House</a>
+								<a href="#" class="afm-mega__link">Wire Rope Nethouse</a>
+								<a href="#" class="afm-mega__link">Glasshouse</a>
+							</div>
+							<div class="afm-mega__col">
+								<p class="afm-mega__col-title">Growing System Solution</p>
+								<a href="#" class="afm-mega__link">Outdoor Hydroponics System</a>
+								<a href="#" class="afm-mega__link">Cocopeat Based System</a>
+								<a href="#" class="afm-mega__link">Soil-Based Growing System</a>
+							</div>
+							<div class="afm-mega__col">
+								<p class="afm-mega__col-title">Crop Solutions</p>
+								<a href="#" class="afm-mega__link">Exotic Leafy Greens</a>
+								<a href="#" class="afm-mega__link">Exotic Vine Crops</a>
+								<a href="#" class="afm-mega__link">Indian Vegetables</a>
+								<a href="#" class="afm-mega__link">Berries</a>
+								<a href="#" class="afm-mega__link">Medicinal Crops</a>
+								<a href="#" class="afm-mega__link">Cannabis / Hemp</a>
+								<a href="#" class="afm-mega__link">Flowers</a>
+							</div>
+							<div class="afm-mega__col">
+								<p class="afm-mega__col-title">Automation Solutions</p>
+								<a href="#" class="afm-mega__link">IoT Automation</a>
+								<a href="#" class="afm-mega__link">Auto Fertigation Unit</a>
+								<a href="#" class="afm-mega__link">Auto Dosing Unit</a>
+								<a href="#" class="afm-mega__link">Sensors &amp; Measuring Devices</a>
+							</div>
+						</div>
+						<div class="afm-mega__footer">
+							<p class="afm-mega__footer-text">Not sure which structure fits your land? <strong>Talk to an
+									agronomist.</strong></p>
+							<a href="#" class="afm-mega__footer-link">Book a free site visit</a>
+						</div>
+					</div>
+				</li>
+
+				<li class="afm-menu__item">
+					<button type="button" class="afm-menu__link" aria-expanded="false">
+						Farming Models &amp; Packages
+						<svg class="afm-menu__caret" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+							stroke-width="3">
+							<path d="M6 9l6 6 6-6" />
+						</svg>
+					</button>
+					<ul class="afm-dropdown">
+						<li><a href="#" class="afm-dropdown__link">Outdoor Hydroponics &mdash; Fan-Pad Polyhouse +
+								NFT</a></li>
+						<li><a href="#" class="afm-dropdown__link">Indoor Hydroponics</a></li>
+						<li><a href="#" class="afm-dropdown__link">NVPH &mdash; Growbag with Cocopeat</a></li>
+						<li><a href="#" class="afm-dropdown__link">NVPH &mdash; Soil-Based</a></li>
+						<li><a href="#" class="afm-dropdown__link">Nethouse &mdash; Soil-Based</a></li>
+						<li><a href="#" class="afm-dropdown__link">Glasshouse &mdash; Hydroponics</a></li>
+						<li><a href="#" class="afm-dropdown__link">ROI Calculator</a></li>
+					</ul>
+				</li>
+
+				<li class="afm-menu__item">
+					<button type="button" class="afm-menu__link" aria-expanded="false">
+						Academy
+						<svg class="afm-menu__caret" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+							stroke-width="3">
+							<path d="M6 9l6 6 6-6" />
+						</svg>
+					</button>
+					<ul class="afm-dropdown">
+						<li><a href="#" class="afm-dropdown__link">Online Training (Pre-recorded)</a></li>
+						<li><a href="#" class="afm-dropdown__link">Offline Training</a></li>
+						<li><a href="#" class="afm-dropdown__link">Live Webinar</a></li>
+					</ul>
+				</li>
+
+				<li class="afm-menu__item">
+					<a href="#" class="afm-menu__link">Global</a>
+				</li>
+
+				<li class="afm-menu__item">
+					<a href="#" class="afm-menu__link">Our Projects</a>
+				</li>
+
+				<li class="afm-menu__item">
+					<button type="button" class="afm-menu__link" aria-expanded="false">
+						Knowledge Hub
+						<svg class="afm-menu__caret" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+							stroke-width="3">
+							<path d="M6 9l6 6 6-6" />
+						</svg>
+					</button>
+					<ul class="afm-dropdown">
+						<li><a href="#" class="afm-dropdown__link">Tools &mdash; Viability Check &amp; ROI
+								Calculator</a></li>
+						<li><a href="#" class="afm-dropdown__link">Download Company Profile &amp; Brochure</a></li>
+						<li><a href="resources.html" class="afm-dropdown__link">Blogs &amp; Articles</a></li>
+					</ul>
+				</li>
+
+			</ul>
+
+			<div class="afm-navbar__actions">
+				<a href="#" class="afm-btn-primary fm-cta-btn">
+					<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+						stroke-width="2.4">
+						<path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+					</svg>
+					<span>Contact Us</span>
+				</a>
+				<button type="button" class="afm-burger" id="afmBurger" aria-label="Toggle menu" aria-expanded="false">
+					<span class="afm-burger__bars"></span>
+				</button>
+			</div>
+		</nav>
+
+
+
+		<section class="fm-section fmab" id="about-us">
+			<!-- background photo -->
+			<div class="fmab__media">
+				<img src="images/banner3.jpeg" alt="Protected cultivation polyhouse with lush green crops"
+					class="fmab__img" loading="eager">
+			</div>
+
+			<div class="fmab__inner">
+				<!-- LEFT: text -->
+				<div class="fmab__content">
+					<span class="fmab-eyebrow">Knowledge Hub<i class="fmab-eyebrow__line"></i></span>
+
+					<h1 class="fm-heading fmab__title">
+						Articles &amp; <br>Industry <span class="fmdm__accent">Insights</span>
+					</h1>
+
+					<p class="fm-text fmab__text">
+						Discover practical guides, technical insights, and high-value strategies for modern protected farming.
+					</p>
+
+					<a href="#blog" class="fm-cta-btn">
+						Explore Articles
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+							stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+							<line x1="5" y1="12" x2="19" y2="12"></line>
+							<polyline points="12 5 19 12 12 19"></polyline>
+						</svg>
+					</a>
+				</div>
+
+
+			</div>
+		</section>
+
+		<!-- ========== BLOG LISTING SECTION ========== -->
+		<section class="fmbl" id="blog">
+			<div class="fmbl__inner">
+
+				<!-- CATEGORY PILLS (real links to category pages) -->
+				<nav class="fmbl-filters" aria-label="Article categories">
+					<a class="fmbl-pill is-active" href="/blog" aria-current="page">All Articles</a>
+					<a class="fmbl-pill" href="/blog/category/protected-farming">Protected Farming</a>
+					<a class="fmbl-pill" href="/blog/category/crop-solutions">Crop Solutions</a>
+					<a class="fmbl-pill" href="/blog/category/automation">Automation</a>
+					<a class="fmbl-pill" href="/blog/category/growing-systems">Growing Systems</a>
+					<a class="fmbl-pill" href="/blog/category/industry-insights">Industry Insights</a>
+					<a class="fmbl-pill" href="/blog/category/sustainability">Sustainability</a>
+				</nav>
+
+				<div class="fmbl__layout">
+
+					<!-- ========== MAIN: ARTICLE GRID ========== -->
+					<div class="fmbl__main">
+						<div class="fmbl-grid">
+
+							<!-- CARD 1: wide lead card (spans 2 columns) -->
+							<article class="fmbl-card fmbl-card--top fmbl-card--wide">
+								<figure class="fmbl-card__media">
+									<img src="images/banner3.jpeg" alt="Rows of lettuce growing inside a large greenhouse" loading="eager" width="1200" height="520">
+								</figure>
+								<div class="fmbl-card__body">
+									<div class="fmbl-card__meta">
+										<span class="fmbl-tag">Protected Farming</span>
+										<time class="fmbl-date" datetime="2026-10-12">Oct 12, 2026</time>
+									</div>
+									<h3 class="fm-heading fmbl-card__title">
+										<a class="fmbl-card__link" href="/blog/protected-farming-transforming-agriculture">How Protected Farming is Transforming Modern Agriculture</a>
+									</h3>
+									<p class="fm-text fmbl-card__text">Discover how protected farming helps achieve higher yields, better quality and year-round production while reducing climate risks.</p>
+									<span class="fmbl-card__more" aria-hidden="true">
+										Read More
+										<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+											<path d="M5 12h14M12 5l7 7-7 7"/>
+										</svg>
+									</span>
+								</div>
+							</article>
+
+							<!-- CARD 2: narrow card -->
+							<article class="fmbl-card fmbl-card--top">
+								<figure class="fmbl-card__media">
+									<img src="images/tomatoo.webp" alt="Ripe red tomatoes on the vine" loading="eager" width="600" height="520">
+								</figure>
+								<div class="fmbl-card__body">
+									<div class="fmbl-card__meta">
+										<span class="fmbl-tag">Crop Solutions</span>
+										<time class="fmbl-date" datetime="2026-10-08">Oct 08, 2026</time>
+									</div>
+									<h3 class="fm-heading fmbl-card__title">
+										<a class="fmbl-card__link" href="/blog/best-crops-polyhouse-india">Best Crops for Polyhouse Farming in India</a>
+									</h3>
+									<p class="fm-text fmbl-card__text">Explore high-value crops that thrive in protected environments and offer better market returns.</p>
+									<span class="fmbl-card__more" aria-hidden="true">
+										Read More
+										<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+											<path d="M5 12h14M12 5l7 7-7 7"/>
+										</svg>
+									</span>
+								</div>
+							</article>
+
+							<!-- CARD 3: standard card -->
+							<article class="fmbl-card">
+								<figure class="fmbl-card__media">
+									<img src="images/gfar.png" alt="Hydroponic lettuce in white channels" loading="lazy" width="600" height="420">
+								</figure>
+								<div class="fmbl-card__body">
+									<div class="fmbl-card__meta">
+										<span class="fmbl-tag">Growing Systems</span>
+										<time class="fmbl-date" datetime="2026-10-05">Oct 05, 2026</time>
+									</div>
+									<h3 class="fm-heading fmbl-card__title">
+										<a class="fmbl-card__link" href="/blog/hydroponics-vs-traditional-farming">Hydroponics vs Traditional Farming: Key Differences</a>
+									</h3>
+									<p class="fm-text fmbl-card__text">A detailed comparison to help you choose the right growing system for your goals.</p>
+									<span class="fmbl-card__more" aria-hidden="true">
+										Read More
+										<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+											<path d="M5 12h14M12 5l7 7-7 7"/>
+										</svg>
+									</span>
+								</div>
+							</article>
+
+							<!-- CARD 4 -->
+							<article class="fmbl-card">
+								<figure class="fmbl-card__media">
+									<img src="images/automation.png" alt="Automated greenhouse irrigation and climate control system" loading="lazy" width="600" height="420">
+								</figure>
+								<div class="fmbl-card__body">
+									<div class="fmbl-card__meta">
+										<span class="fmbl-tag">Automation</span>
+										<time class="fmbl-date" datetime="2026-10-02">Oct 02, 2026</time>
+									</div>
+									<h3 class="fm-heading fmbl-card__title">
+										<a class="fmbl-card__link" href="/blog/role-of-automation-in-modern-greenhouses">Role of Automation in Modern Greenhouses</a>
+									</h3>
+									<p class="fm-text fmbl-card__text">Learn how smart automation improves efficiency, reduces manual work and ensures consistent crop quality.</p>
+									<span class="fmbl-card__more" aria-hidden="true">
+										Read More
+										<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+											<path d="M5 12h14M12 5l7 7-7 7"/>
+										</svg>
+									</span>
+								</div>
+							</article>
+
+							<!-- CARD 5 -->
+							<article class="fmbl-card">
+								<figure class="fmbl-card__media">
+									<img src="images/pro1.jpeg" alt="Agricultural sensors and innovative farm technology" loading="lazy" width="600" height="420">
+								</figure>
+								<div class="fmbl-card__body">
+									<div class="fmbl-card__meta">
+										<span class="fmbl-tag">Industry Insights</span>
+										<time class="fmbl-date" datetime="2026-09-28">Sep 28, 2026</time>
+									</div>
+									<h3 class="fm-heading fmbl-card__title">
+										<a class="fmbl-card__link" href="/blog/top-agricultural-trends-to-watch-in-2026">Top Agricultural Trends to Watch in 2026</a>
+									</h3>
+									<p class="fm-text fmbl-card__text">Explore the latest innovations and technologies shaping the future of farming.</p>
+									<span class="fmbl-card__more" aria-hidden="true">
+										Read More
+										<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+											<path d="M5 12h14M12 5l7 7-7 7"/>
+										</svg>
+									</span>
+								</div>
+							</article>
+
+							<!-- CARD 6 -->
+							<article class="fmbl-card">
+								<figure class="fmbl-card__media">
+									<img src="images/farm00.jpeg" alt="Eco-friendly farming and soil water conservation" loading="lazy" width="600" height="420">
+								</figure>
+								<div class="fmbl-card__body">
+									<div class="fmbl-card__meta">
+										<span class="fmbl-tag">Sustainability</span>
+										<time class="fmbl-date" datetime="2026-09-20">Sep 20, 2026</time>
+									</div>
+									<h3 class="fm-heading fmbl-card__title">
+										<a class="fmbl-card__link" href="/blog/sustainable-farming-practices-for-healthier-future">Sustainable Farming Practices for a Healthier Future</a>
+									</h3>
+									<p class="fm-text fmbl-card__text">Learn practical steps to reduce environmental impact and build a more resilient food system.</p>
+									<span class="fmbl-card__more" aria-hidden="true">
+										Read More
+										<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+											<path d="M5 12h14M12 5l7 7-7 7"/>
+										</svg>
+									</span>
+								</div>
+							</article>
+
+							<!-- CARD 7 -->
+							<article class="fmbl-card">
+								<figure class="fmbl-card__media">
+									<img src="images/banner2.jpeg" alt="Structure of a commercial polyhouse greenhouse" loading="lazy" width="600" height="420">
+								</figure>
+								<div class="fmbl-card__body">
+									<div class="fmbl-card__meta">
+										<span class="fmbl-tag">Protected Farming</span>
+										<time class="fmbl-date" datetime="2026-09-20">Sep 20, 2026</time>
+									</div>
+									<h3 class="fm-heading fmbl-card__title">
+										<a class="fmbl-card__link" href="/blog/choosing-right-greenhouse-structure">Choosing the Right Greenhouse Structure</a>
+									</h3>
+									<p class="fm-text fmbl-card__text">Understand the different types of greenhouse structures and which one suits your needs.</p>
+									<span class="fmbl-card__more" aria-hidden="true">
+										Read More
+										<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+											<path d="M5 12h14M12 5l7 7-7 7"/>
+										</svg>
+									</span>
+								</div>
+							</article>
+
+							<!-- CARD 8 -->
+							<article class="fmbl-card">
+								<figure class="fmbl-card__media">
+									<img src="images/farm5.jpeg" alt="Healthy high-yield crop with balanced nutrient fertigation" loading="lazy" width="600" height="420">
+								</figure>
+								<div class="fmbl-card__body">
+									<div class="fmbl-card__meta">
+										<span class="fmbl-tag">Crop Solutions</span>
+										<time class="fmbl-date" datetime="2026-09-15">Sep 15, 2026</time>
+									</div>
+									<h3 class="fm-heading fmbl-card__title">
+										<a class="fmbl-card__link" href="/blog/nutrient-management-for-high-yield-crops">Nutrient Management for High-Yield Crops</a>
+									</h3>
+									<p class="fm-text fmbl-card__text">A complete guide to maintaining the right nutrient balance for healthier and more productive crops.</p>
+									<span class="fmbl-card__more" aria-hidden="true">
+										Read More
+										<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+											<path d="M5 12h14M12 5l7 7-7 7"/>
+										</svg>
+									</span>
+								</div>
+							</article>
+
+						</div>
+						<!-- pagination goes here -->
+					</div>
+
+					<!-- ========== SIDEBAR ========== -->
+					<aside class="fmbl__aside" aria-label="Blog sidebar">
+
+						<form class="fmbl-search" role="search" action="/blog" method="get">
+							<label class="fmbl-sr" for="fmbl-q">Search articles</label>
+							<input class="fmbl-search__input" id="fmbl-q" name="q" type="search" placeholder="Search articles..." autocomplete="off">
+							<button class="fmbl-search__btn" type="submit" aria-label="Search">
+								<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+									<circle cx="11" cy="11" r="8"/>
+									<line x1="21" y1="21" x2="16.65" y2="16.65"/>
+								</svg>
+							</button>
+						</form>
+
+						<div class="fmbl-aside__pair">
+
+							<nav class="fmbl-cats" aria-label="Categories">
+								<h3 class="fm-heading fmbl-side-title">Categories</h3>
+								<ul class="fmbl-cats__list">
+									<li><a class="fmbl-cats__row is-active" href="/blog"><span>All Articles</span><span class="fmbl-cats__count">26</span></a></li>
+									<li><a class="fmbl-cats__row" href="/blog/category/protected-farming"><span>Protected Farming</span><span class="fmbl-cats__count">8</span></a></li>
+									<li><a class="fmbl-cats__row" href="/blog/category/crop-solutions"><span>Crop Solutions</span><span class="fmbl-cats__count">6</span></a></li>
+									<li><a class="fmbl-cats__row" href="/blog/category/automation"><span>Automation</span><span class="fmbl-cats__count">4</span></a></li>
+									<li><a class="fmbl-cats__row" href="/blog/category/growing-systems"><span>Growing Systems</span><span class="fmbl-cats__count">5</span></a></li>
+									<li><a class="fmbl-cats__row" href="/blog/category/industry-insights"><span>Industry Insights</span><span class="fmbl-cats__count">3</span></a></li>
+									<li><a class="fmbl-cats__row" href="/blog/category/sustainability"><span>Sustainability</span><span class="fmbl-cats__count">2</span></a></li>
+								</ul>
+							</nav>
+
+							<section class="fmbl-pop" aria-label="Popular posts">
+								<h3 class="fm-heading fmbl-side-title">Popular Posts</h3>
+								<ul class="fmbl-pop__list">
+									<li class="fmbl-pop__item">
+										<a class="fmbl-pop__link" href="/blog/protected-farming-transforming-agriculture">
+											<img class="fmbl-pop__thumb" src="images/banner3.jpeg" alt="" loading="lazy" width="120" height="120">
+											<span class="fmbl-pop__txt">
+												<time class="fmbl-pop__date" datetime="2026-10-12">Oct 12, 2026</time>
+												<span class="fmbl-pop__title">How Protected Farming is Transforming Modern Agriculture</span>
+											</span>
+										</a>
+									</li>
+									<li class="fmbl-pop__item">
+										<a class="fmbl-pop__link" href="/blog/best-crops-polyhouse-india">
+											<img class="fmbl-pop__thumb" src="images/tomatoo.webp" alt="" loading="lazy" width="120" height="120">
+											<span class="fmbl-pop__txt">
+												<time class="fmbl-pop__date" datetime="2026-10-08">Oct 08, 2026</time>
+												<span class="fmbl-pop__title">Best Crops for Polyhouse Farming in India</span>
+											</span>
+										</a>
+									</li>
+									<li class="fmbl-pop__item">
+										<a class="fmbl-pop__link" href="/blog/hydroponics-vs-traditional-farming">
+											<img class="fmbl-pop__thumb" src="images/gfar.png" alt="" loading="lazy" width="120" height="120">
+											<span class="fmbl-pop__txt">
+												<time class="fmbl-pop__date" datetime="2026-10-05">Oct 05, 2026</time>
+												<span class="fmbl-pop__title">Hydroponics vs Traditional Farming: Key Differences</span>
+											</span>
+										</a>
+									</li>
+									<li class="fmbl-pop__item">
+										<a class="fmbl-pop__link" href="/blog/role-of-automation-in-modern-greenhouses">
+											<img class="fmbl-pop__thumb" src="images/automation.png" alt="" loading="lazy" width="120" height="120">
+											<span class="fmbl-pop__txt">
+												<time class="fmbl-pop__date" datetime="2026-10-02">Oct 02, 2026</time>
+												<span class="fmbl-pop__title">Role of Automation in Modern Greenhouses</span>
+											</span>
+										</a>
+									</li>
+								</ul>
+							</section>
+
+						</div>
+					</aside>
+
+				</div>
+			</div>
+		</section>
+
+
+
+		<footer class="afm-ft">
+			<div class="afm-ft__social-bar">
+				<div class="afm-ft__social-container">
+					<span>Follow our social :</span>
+					<div class="afm-ft__social-links">
+						<a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24"
+								fill="currentColor">
+								<path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+							</svg></a>
+						<a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+								stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+								<path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+								<line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+							</svg></a>
+						<a href="#" aria-label="X"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+								<path
+									d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
+							</svg></a>
+						<a href="#" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24"
+								fill="currentColor">
+								<path
+									d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29.02 29.02 0 001 11.75a29.02 29.02 0 00.46 5.33 2.78 2.78 0 001.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29.02 29.02 0 00.46-5.33 29.02 29.02 0 00-.46-5.33zM9.75 15.02V8.48L15.5 11.75l-5.75 3.27z" />
+							</svg></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="afm-ft__main">
+				<div class="afm-ft__container">
+					<div class="afm-ft__col afm-ft__col--brand">
+						<a href="index.html" class="afm-brand afm-ft__brand">
+							<span class="afm-brand__mark">
+								<img src="images/footerl.png" alt="Future Agri Infra logo"
+									style="height: 54px; width: auto; object-fit: contain;">
+							</span>
+						</a>
+						<p class="afm-ft__desc">Future Agri Infra is dedicated to sustainable agriculture and
+							premium-quality
+							turnkey protected-farming projects.</p>
+						<form class="afm-ft__form">
+							<input type="email" placeholder="Email" class="afm-ft__input" required>
+							<button type="submit" class="afm-ft__submit">
+								<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+									stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+									<path
+										d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+									<polyline points="22,6 12,13 2,6" />
+								</svg>
+								Subscribe Newsletter
+							</button>
+						</form>
+					</div>
+
+					<div class="afm-ft__col">
+						<h4 class="afm-ft__heading">Solutions</h4>
+						<ul class="afm-ft__list">
+							<li><a href="#">Smart Farming</a></li>
+							<li><a href="#">Renewable Energy</a></li>
+							<li><a href="#">Precision Agriculture</a></li>
+							<li><a href="#">Water Management</a></li>
+							<li><a href="#">Soil Optimization</a></li>
+							<li><a href="#">Greenhouse Systems</a></li>
+						</ul>
+					</div>
+
+					<div class="afm-ft__col">
+						<h4 class="afm-ft__heading">Support</h4>
+						<ul class="afm-ft__list">
+							<li><a href="#">Contact Support</a></li>
+							<li><a href="#">Help Center</a></li>
+							<li><a href="#">Order Tracking</a></li>
+							<li><a href="#">Returns &amp; Refunds</a></li>
+							<li><a href="#">FAQs</a></li>
+						</ul>
+					</div>
+
+					<div class="afm-ft__col">
+						<h4 class="afm-ft__heading">Company</h4>
+						<ul class="afm-ft__list">
+							<li><a href="#">About Future Agri Infra</a></li>
+							<li><a href="#">Our Farm</a></li>
+							<li><a href="#">Sustainability Commitment</a></li>
+							<li><a href="#">Quality Standards</a></li>
+							<li><a href="#">Careers</a></li>
+							<li><a href="#">Press &amp; Media</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="afm-ft__bottom">
+				<div class="afm-ft__bottom-container">
+					<div class="afm-ft__legal">
+						<a href="#">Terms &amp; Conditions</a>
+						<a href="#">Privacy Policy</a>
+						<a href="#">Cookie Policy</a>
+					</div>
+					<div class="afm-ft__copy">
+						Copyright &copy; 2026 Future Agri Infra, All rights reserved. Created by Crescita Software.
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="script.js?v=2.0"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+</body>
+
+</html>

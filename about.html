@@ -11,7 +11,8 @@
     href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap"
     rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css?v=1.5">
+  <link rel="stylesheet" href="style.css?v=1.14">
+  <link rel="stylesheet" href="resstyle.css?v=1.15">
 </head>
 
 <body>
@@ -197,7 +198,7 @@
           <span class="fmab-eyebrow">About Us<i class="fmab-eyebrow__line"></i></span>
 
           <h1 class="fm-heading fmab__title">
-            Shaping the<br>Future of <span class="fmab__accent">Agriculture</span>
+            Shaping the<br>Future of <span class="fmdm__accent">Agriculture</span>
           </h1>
 
           <p class="fm-text fmab__text">
@@ -228,7 +229,7 @@
           <span class="fmos-eyebrow"><i class="fmos-eyebrow__line"></i> Our Story</span>
 
           <h1 class="fm-heading fmos__title">
-            From Farm <br> Infrastructure <br> to <em class="fmdm__accent"> Farm Performance </em>.
+            From Farm <br> Infrastructure <br> to <em class="fmdm__accent"> Farm Performance .</em>
           </h1>
 
           <p class="fm-text fmos__text">
@@ -341,31 +342,30 @@
               <circle cx="325" cy="300" r="214" stroke-opacity=".14" stroke-dasharray="90 1260"
                 transform="rotate(35 325 300)" />
             </g>
-            <circle cx="302" cy="152" r="4" fill="currentColor" />
-            <!-- connector line (node centre to dot on the big circle) + dot -->
+            <!-- Connector lines end at the outside edge of the central image. -->
             <g data-fmex-line="1">
-              <line x1="248" y1="115" x2="254" y2="159" />
-              <circle cx="254" cy="159" r="4.5" />
+              <line x1="325" y1="96" x2="325" y2="140" />
+              <circle cx="325" cy="140" r="4.5" />
             </g>
             <g data-fmex-line="2">
-              <line x1="142" y1="195" x2="184" y2="220" />
-              <circle cx="184" cy="220" r="4.5" />
+              <line x1="502" y1="198" x2="463" y2="220" />
+              <circle cx="463" cy="220" r="4.5" />
             </g>
             <g data-fmex-line="3">
-              <line x1="480" y1="202" x2="424" y2="224" />
-              <circle cx="424" cy="224" r="4.5" />
+              <line x1="502" y1="402" x2="463" y2="380" />
+              <circle cx="463" cy="380" r="4.5" />
             </g>
             <g data-fmex-line="4">
-              <line x1="105" y1="364" x2="177" y2="354" />
-              <circle cx="177" cy="354" r="4.5" />
+              <line x1="325" y1="504" x2="325" y2="460" />
+              <circle cx="325" cy="460" r="4.5" />
             </g>
             <g data-fmex-line="5">
-              <line x1="464" y1="383" x2="424" y2="357" />
-              <circle cx="424" cy="357" r="4.5" />
+              <line x1="148" y1="402" x2="187" y2="380" />
+              <circle cx="187" cy="380" r="4.5" />
             </g>
             <g data-fmex-line="6">
-              <line x1="303" y1="458" x2="301" y2="428" />
-              <circle cx="301" cy="428" r="4.5" />
+              <line x1="148" y1="198" x2="187" y2="220" />
+              <circle cx="187" cy="220" r="4.5" />
             </g>
           </svg>
 
@@ -389,60 +389,52 @@
           <span class="fmex-ghost" data-fmex-ghost aria-hidden="true"></span>
 
           <ol class="fmex-steps">
-            <li class="fmex-step" style="--nx:31.8%; --ny:12.7%; --lx:39%;   --ly:-1.4%;">
+            <li class="fmex-step" style="--nx:42.76%; --ny:10.98%; --lx:47.2%; --ly:-1.4%;">
               <button type="button" class="fmex-node" data-fmex-node="1" aria-pressed="false"
                 aria-label="01 Protected Cultivation"><span>01</span></button>
               <div class="fmex-label" data-fmex-label="1">
                 <h3 class="fmex-label__title">Protected<br>Cultivation</h3>
                 <i class="fmex-label__line"></i>
-                <p class="fmex-label__text">Greenhouse, polyhouse and climate-controlled farming solutions.</p>
               </div>
             </li>
-            <li class="fmex-step" style="--nx:14.1%; --ny:29.6%; --lx:-12%;  --ly:38.3%;">
+            <li class="fmex-step" style="--nx:69.54%; --ny:30.83%; --lx:74.7%; --ly:23.7%;">
               <button type="button" class="fmex-node" data-fmex-node="2" aria-pressed="false"
                 aria-label="02 Engineering and Infrastructure"><span>02</span></button>
               <div class="fmex-label" data-fmex-label="2">
                 <h3 class="fmex-label__title">Engineering<br>&amp; Infrastructure</h3>
                 <i class="fmex-label__line"></i>
-                <p class="fmex-label__text">Design, development and turnkey project execution for modern farms.</p>
               </div>
             </li>
-            <li class="fmex-step" style="--nx:68%;   --ny:31.8%; --lx:74.7%; --ly:30.7%;">
+            <li class="fmex-step" style="--nx:69.54%; --ny:70.52%; --lx:74.7%; --ly:60.5%;">
               <button type="button" class="fmex-node" data-fmex-node="3" aria-pressed="false"
                 aria-label="03 Crop Advisory and Agronomy"><span>03</span></button>
               <div class="fmex-label" data-fmex-label="3">
                 <h3 class="fmex-label__title">Crop Advisory<br>&amp; Agronomy</h3>
                 <i class="fmex-label__line"></i>
-                <p class="fmex-label__text">Scientific crop planning, cultivation support and yield optimisation.</p>
               </div>
             </li>
-            <li class="fmex-step" style="--nx:8.6%;  --ny:62.5%; --lx:-1%; --ly:72%;">
+            <li class="fmex-step" style="--nx:42.76%; --ny:90.37%; --lx:47.8%; --ly:82%;">
               <button type="button" class="fmex-node" data-fmex-node="4" aria-pressed="false"
                 aria-label="04 Technology Integration"><span>04</span></button>
               <div class="fmex-label" data-fmex-label="4">
                 <h3 class="fmex-label__title">Technology<br>Integration</h3>
                 <i class="fmex-label__line"></i>
-                <p class="fmex-label__text">Smart farming systems, automation and data-driven farm management.</p>
               </div>
             </li>
-            <li class="fmex-step" style="--nx:65.5%; --ny:68.4%; --lx:73.8%; --ly:62.8%;">
+            <li class="fmex-step" style="--nx:15.99%; --ny:70.52%; --lx:0%; --ly:47%;">
               <button type="button" class="fmex-node" data-fmex-node="5" aria-pressed="false"
                 aria-label="05 Training and Knowledge Support"><span>05</span></button>
               <div class="fmex-label" data-fmex-label="5">
                 <h3 class="fmex-label__title">Training &amp;<br>Knowledge Support</h3>
                 <i class="fmex-label__line"></i>
-                <p class="fmex-label__text">Capacity building for farmers, teams and agri-entrepreneurs through
-                  practical training.</p>
               </div>
             </li>
-            <li class="fmex-step" style="--nx:40.1%; --ny:84.1%; --lx:47.8%; --ly:79%;">
+            <li class="fmex-step" style="--nx:15.99%; --ny:30.83%; --lx:0%; --ly:6%;">
               <button type="button" class="fmex-node" data-fmex-node="6" aria-pressed="false"
                 aria-label="06 Market Linkages and Business Support"><span>06</span></button>
               <div class="fmex-label" data-fmex-label="6">
                 <h3 class="fmex-label__title">Market Linkages<br>&amp; Business Support</h3>
                 <i class="fmex-label__line"></i>
-                <p class="fmex-label__text">Advisory, market connections and ongoing handholding for long-term success.
-                </p>
               </div>
             </li>
           </ol>
@@ -1161,12 +1153,9 @@
     </footer>
   </div>
 
-  <script src="script.js?v=1.5"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-
-  <script src="home.js"></script>
-
+  <script src="script.js?v=1.6"></script>
 </body>
 
 </html>
